@@ -1,0 +1,39 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://stoymta.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jun 2020 23:58:28 +0800</lastBuildDate>
+    
+        <atom:link href="https://stoymta.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>First</title>
+        <link>https://stoymta.github.io/post/first/</link>
+        <pubDate>Sat, 06 Jun 2020 23:58:28 +0800</pubDate>
+        
+        <guid>https://stoymta.github.io/post/first/</guid>
+        <description>My New Hugo Site https://stoymta.github.io/post/first/ -&lt;p&gt;1.打开vm虚拟机，选择Edit&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;选择第三项virtual network editor&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;3.选择名字为vmnet8的&lt;/p&gt;
+&lt;p&gt;4.在下方选择nat的网络模式，并关掉开启dhcp的选项&lt;/p&gt;
+&lt;p&gt;5.打开natseting的选项  网关地址Gateway选择自己路由器的地址&lt;/p&gt;
+&lt;p&gt;6.打开CentOS用切换到root账户&lt;/p&gt;
+&lt;p&gt;7.用命令 vim /etc/sysconfig/network-scripts/ifcfg-ens33 编辑网卡配置&lt;/p&gt;
+&lt;p&gt;8.将BOOTPROTO的dhcp改成static&lt;/p&gt;
+&lt;p&gt;9.将ONBOOT的no改成yes&lt;/p&gt;
+&lt;p&gt;10.配置IPADDR 这个是ip地址  比如路由器地址192.168.1.1 那就设置成192.168.1.x  前三位数必须和路由器一致，最后一位自己指定。配置NETMASK地址  固定255.255.255.0.
+配置GATEWAY地址，这个与路由器的保持一致就好了.配置DNS1地址  119.29.29.29&lt;/p&gt;
+&lt;p&gt;11.保存退出后重启网卡服务  systemctl restart network.server&lt;/p&gt;
+- https://stoymta.github.io/post/first/ - </description>
+        </item>
+    
+    
+  </channel>
+</rss> 
